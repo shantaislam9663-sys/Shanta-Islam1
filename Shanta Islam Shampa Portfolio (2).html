@@ -1,0 +1,249 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Shanta Islam Shampa Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: centered column. Forest-green hero card with an arched portrait panel on the left, then cream paper cards with gold labels and gold-ruled project blocks */
+:root {
+  --forest: #173B36;
+  --leaf: #24564D;
+  --gold: #C6A66A;
+  --gold-text: #8A6B2F;
+  --gold-soft: #E7D7B5;
+  --bg: #F4F1E9;
+  --paper: #FFFEFA;
+  --tint: #F8F6F0;
+  --line: #E6E0D4;
+  --ink: #20302D;
+  --muted: #65736F;
+  --head: #173B36;
+  --on-forest: #F3F0E9;
+  --serif: "Libre Baskerville", Georgia, serif;
+  --sans: "Inter", Arial, Helvetica, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --forest: #11302B; --leaf: #1B4740; --gold: #D2B576; --gold-text: #D2B576; --gold-soft: #E7D7B5;
+    --bg: #0B1815; --paper: #12231F; --tint: #162B26; --line: #25403A;
+    --ink: #E4ECE9; --muted: #9BB0AA; --head: #E9D9B4; --on-forest: #F3F0E9;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --forest: #11302B; --leaf: #1B4740; --gold: #D2B576; --gold-text: #D2B576; --gold-soft: #E7D7B5;
+  --bg: #0B1815; --paper: #12231F; --tint: #162B26; --line: #25403A;
+  --ink: #E4ECE9; --muted: #9BB0AA; --head: #E9D9B4; --on-forest: #F3F0E9;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--serif); font-size: 16px; line-height: 1.75;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 56px;
+}
+.shell { max-width: 1050px; margin: 0 auto; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+header.top .shell { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px 20px; padding-block: 14px; font-family: var(--sans); }
+.brand { font-weight: 700; font-size: 12px; letter-spacing: 2px; color: var(--head); text-decoration: none; text-transform: uppercase; }
+nav { display: flex; gap: 4px 20px; flex-wrap: wrap; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; font-weight: 500; }
+nav a { color: var(--muted); text-decoration: none; padding: 2px 0; border-bottom: 2px solid transparent; }
+nav a:hover { color: var(--head); border-color: var(--gold); }
+
+.hero {
+  margin-top: 26px; display: grid; grid-template-columns: 270px minmax(0, 1fr);
+  background: var(--forest); color: var(--on-forest); border-radius: 24px; overflow: hidden;
+  box-shadow: 0 18px 45px rgba(23, 59, 54, .14);
+}
+.photo-wrap { padding: 32px; display: flex; align-items: center; justify-content: center; background: var(--leaf); }
+.portrait {
+  width: 190px; height: 230px; border: 4px solid var(--gold-soft); border-radius: 100px 100px 22px 22px;
+  display: grid; place-items: center; background: var(--forest); color: var(--gold-soft);
+  font-family: var(--serif); font-weight: 700; font-size: 3.2rem; letter-spacing: .04em;
+}
+.hero-copy { padding: 44px 40px; min-width: 0; }
+.eyebrow { font-family: var(--sans); font-weight: 700; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #E2C995; }
+h1 { font-family: var(--sans); font-weight: 700; font-size: clamp(2.1rem, 5.4vw, 3.5rem); line-height: 1.08; letter-spacing: -.01em; margin: 12px 0; text-wrap: balance; }
+.role { font-family: var(--sans); font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: #E5D6B5; }
+.hero p { max-width: 38em; margin: 10px 0 0; color: var(--on-forest); }
+.hero .strap { font-family: var(--sans); font-size: .95rem; opacity: .9; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 20px 0 0; list-style: none; }
+.pills li { font-family: var(--sans); font-size: 12px; padding: 5px 13px; border-radius: 30px; border: 1px solid #BFA978; color: #F3E6C9; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.btn { font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: .5px; text-decoration: none; padding: 10px 22px; border-radius: 30px; border: 1px solid var(--gold); color: #F3E6C9; }
+.btn.fill { background: var(--gold); color: #173B36; }
+.btn:hover { transform: translateY(-1px); }
+
+section { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 28px 32px; margin-top: 18px; scroll-margin-top: 70px; }
+h2 { font-family: var(--sans); font-weight: 700; font-size: 19px; color: var(--head); margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+h3 { font-family: var(--sans); font-weight: 700; font-size: 16px; color: var(--head); margin: 0 0 8px; line-height: 1.4; }
+p { margin: 0 0 12px; }
+section p:last-child { margin-bottom: 0; }
+.muted { color: var(--muted); }
+.card { border: 1px solid var(--line); border-radius: 13px; padding: 20px; background: var(--paper); min-width: 0; }
+section > .card { background: var(--tint); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.label { font-family: var(--sans); font-weight: 700; font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--gold-text); margin-bottom: 4px; }
+ul.list { margin: 8px 0 0; padding-left: 20px; }
+ul.list li { margin-bottom: 2px; }
+ul.list li::marker { color: var(--gold); }
+.facts { display: flex; flex-wrap: wrap; gap: 10px 36px; margin: 14px 0 0; font-family: var(--sans); }
+.facts dt { font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--gold-text); }
+.facts dd { margin: 0; font-weight: 700; font-size: 1.35rem; color: var(--head); font-variant-numeric: tabular-nums; }
+.courses { margin-top: 16px; }
+.courses b { font-family: var(--sans); font-size: 14px; color: var(--head); }
+.project { border-left: 4px solid var(--gold); background: var(--tint); padding: 18px 22px; margin: 0 0 14px; border-radius: 0 12px 12px 0; }
+.project:last-child { margin-bottom: 0; }
+.project .tech { font-family: var(--sans); font-size: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+.chips li { font-family: var(--sans); font-size: 12.5px; padding: 5px 14px; border-radius: 30px; border: 1px solid var(--gold); color: var(--head); background: var(--tint); }
+.contact dl { margin: 0; display: grid; gap: 10px; font-family: var(--sans); }
+.contact dt { font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--gold-text); }
+.contact dd { margin: 0; }
+.mail { color: var(--head); font-weight: 600; overflow-wrap: anywhere; }
+.todo { color: var(--muted); font-style: italic; }
+
+footer { text-align: center; padding: 28px 0 0; color: var(--muted); font-family: var(--sans); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+#theme { font-family: var(--sans); font-size: 12px; letter-spacing: .5px; text-transform: none; background: none; color: var(--head); border: 1px solid var(--gold); border-radius: 30px; padding: 5px 16px; cursor: pointer; }
+
+@media (max-width: 700px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .photo-wrap { padding: 26px; }
+  .portrait { width: 150px; height: 184px; font-size: 2.5rem; }
+  .hero-copy { padding: 26px 22px 30px; }
+  section { padding: 22px 18px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn:hover { transform: none; } }
+</style>
+
+<header class="top">
+  <div class="shell">
+    <a class="brand" href="#top">Shanta Islam Shampa</a>
+    <nav aria-label="Main menu">
+      <a href="#profile">Profile</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#internship">Internship</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="shell" id="top">
+  <header class="hero">
+    <div class="photo-wrap"><div class="portrait" role="img" aria-label="Initials SIS">SIS</div></div>
+    <div class="hero-copy">
+      <div class="eyebrow">Hello, welcome to my portfolio</div>
+      <h1>Shanta Islam Shampa</h1>
+      <div class="role">Computer Science &amp; Technology Graduate</div>
+      <p class="strap">IT · Digital Marketing · Web Technology</p>
+      <p>Interested in technology, creativity and digital marketing. My goal is to grow through learning new skills and gaining real experience.</p>
+      <ul class="pills"><li>IT</li><li>SEO</li><li>Digital Marketing</li><li>Web Technology</li></ul>
+      <div class="hero-cta">
+        <a class="btn fill" href="#projects">View projects</a>
+        <a class="btn" href="#contact">Contact me</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <p>I am a Computer Science &amp; Technology graduate from Jessore Polytechnic Institute. My interests include IT, web technologies, SEO and digital marketing. I enjoy learning new tools, building practical skills and exploring creative digital solutions.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Diploma in Engineering – Computer Science &amp; Technology (CST)</h3>
+      <p class="muted">Jessore Polytechnic Institute · Bangladesh Technical Education Board (BTEB)</p>
+      <dl class="facts">
+        <div><dt>Passing Year</dt><dd>2026</dd></div>
+        <div><dt>Final CGPA</dt><dd>3.60 / 4.00</dd></div>
+      </dl>
+    </div>
+    <p class="courses"><b>Additional Courses:</b> Digital Marketing · IT Level 3 · Government Basic Computer Skills</p>
+  </section>
+
+  <section id="skills">
+    <h2>Core Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>IT &amp; Technical</h3>
+        <ul class="list"><li>MS Word</li><li>MS Excel</li><li>PowerPoint</li><li>Internet &amp; Email</li><li>Java Programming</li></ul>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing &amp; Creative</h3>
+        <ul class="list"><li>SEO</li><li>Keyword Research</li><li>Facebook Page Management</li><li>Canva Design</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="internship">
+    <h2>Internship &amp; Practical Learning</h2>
+    <div class="card">
+      <h3>Digital Marketing Intern – Practical Training</h3>
+      <p class="muted">Learning and practicing:</p>
+      <ul class="list">
+        <li>Facebook Business Page Setup &amp; Management</li>
+        <li>Keyword Research &amp; Analysis</li>
+        <li>SEO</li>
+        <li>Canva Graphic Design</li>
+        <li>Social Media Content Creation</li>
+        <li>Google Ads Fundamentals &amp; Practice</li>
+        <li>Social Media Management</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="project">
+      <div class="label">01 · Academic Final Project</div>
+      <h3>Library Management System</h3>
+      <p>A web-based project developed to support library information and routine management activities.</p>
+      <p class="tech"><b>Technologies:</b> HTML, CSS, PHP</p>
+    </div>
+    <div class="project">
+      <div class="label">02 · Practical Learning</div>
+      <h3>Digital Marketing Practice</h3>
+      <p>Facebook Business Page setup, keyword research, SEO, Canva designs, Google Ads practice and social media content creation.</p>
+    </div>
+  </section>
+
+  <section id="interests">
+    <h2>Career Interests</h2>
+    <ul class="chips"><li>IT Support</li><li>Web Technology</li><li>SEO</li><li>Digital Marketing</li><li>Social Media Management</li></ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <dl>
+      <div><dt>Email</dt><dd><a class="mail" href="mailto:shantaislam@gmail.com">shantaislam@gmail.com</a></dd></div>
+      <div><dt>Location</dt><dd>Bagherpara, Jashore, Bangladesh</dd></div>
+    </dl>
+  </section>
+
+  <footer>
+    <span>Thank you for visiting my portfolio</span>
+    <button id="theme" type="button" aria-label="Switch theme">Switch theme</button>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  document.getElementById('theme').addEventListener('click', function () {
+    var cur = root.getAttribute('data-theme');
+    if (!cur) cur = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    root.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+  });
+})();
+</script>
+
+</body></html>
